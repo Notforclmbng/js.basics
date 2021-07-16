@@ -78,40 +78,96 @@
 
 // Задание 4.
 
-// let a = 9;
-// function recursion(a) {
-//     if (a < 0 || a > 15) return 'Задайте число от 0 до 15 включительно';
-//     return recursion(a - 1) + ' ' + a;
+// let a = +prompt('Введите целое значение от 0 до 15 включительно');
+
+// function recursion(x) {
+//     if (x === a) return a;
+//     return recursion(x - 1) + ' ' + x;
 // }
 
-// console.log(recursion(15));
+// switch (a) {
+//     case 0:
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//     case 7:
+//     case 8:
+//     case 9:
+//     case 10:
+//     case 11:
+//     case 12:
+//     case 13:
+//     case 14:
+//     case 15: console.log(recursion(15)); break;
+//     default: console.log('Число не соответствует условию');
+// }
 
-let a = 20;
-function recursion(x) {
-    if (x < 0 || x > 15) return 'Задайте целое число от 0 до 15 включительно';
-    if (x === a) return a;
-    return recursion(x - 1) + ' ' + x;
+
+
+
+// Задание 5.
+
+let a = +prompt('Введите значение переменной "a"');
+let b = +prompt('Введите значение переменной "b"');
+
+console.log(a);
+console.log(b);
+
+function sum(a, b) {
+    return a + b;
 }
 
-// console.log(recursion(15));
+// console.log('Сумма: ' + sum(a, b));
 
 
-switch (a) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-    case 12:
-    case 13:
-    case 14:
-    case 15: console.log(recursion(15));
-    default: console.log('Число не соответствует условию');
+function substr(a, b) {
+    return a - b;
 }
+
+// console.log('Разность: ' + substr(a, b));
+
+function mult(a, b) {
+    return a * b;
+}
+
+// console.log('Умножение: ' + mult(a, b));
+
+function divs(a, b) {
+    return a / b;
+}
+
+// console.log('Деление: ' + divs(a, b));
+
+
+
+
+// Задание 6.
+
+let operation = prompt('Введите название операции: "сумма", "разность", "умножение" или "деление"');
+
+console.log(operation);
+
+function mathOperation(a, b, operation) {
+
+    // switch (operation) {
+    //     case 'сумма': return console.log(sum(a, b)); break;
+    //     case 'разность': console.log(substr(a, b)); break;
+    //     case 'умножение': console.log(mult(a, b)); break;
+    //     case 'деление': console.log(divs(a, b)); break;
+    //     default: console.log('Операции не существует');
+    // }
+    switch (operation) {
+        case 'сумма': return (sum(a, b)); break;
+        case 'разность': return (substr(a, b)); break;
+        case 'умножение': return (mult(a, b)); break;
+        case 'деление': return (divs(a, b)); break;
+        default: return ('Операции не существует');
+    }
+}
+
+console.log(mathOperation(a, b, operation));
+
+
