@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // let goodsCount = 10;
 
 // if (goodsCount > 0) {
@@ -137,42 +137,42 @@
 //
 // console.log(recursion(10));
 
-let number;
-let attempts;
+// let number;
+// let attempts;
 
-function resetGame() {
-    attempts = 0;
-    number = Math.floor(Math.random() * 100);
-    console.log(number);
-}
+// function resetGame() {
+//     attempts = 0;
+//     number = Math.floor(Math.random() * 100);
+//     console.log(number);
+// }
 
-function tryGuessNumber() {
-    const useAnswer = parseInt(prompt('Введите число от 0 до 100, для выхода наберите -1'));
+// function tryGuessNumber() {
+//     const useAnswer = parseInt(prompt('Введите число от 0 до 100, для выхода наберите -1'));
 
-    if (useAnswer === -1) return alert('Game Over!');
+//     if (useAnswer === -1) return alert('Game Over!');
 
-    if (isNaN(useAnswer)) {
-        alert('Необходимо ввести целое число от 0 до 100.');
-        tryGuessNumber();
-        return;
-    }
+//     if (isNaN(useAnswer)) {
+//         alert('Необходимо ввести целое число от 0 до 100.');
+//         tryGuessNumber();
+//         return;
+//     }
 
-    attempts++;
+//     attempts++;
 
-    if (useAnswer > number) {
-        alert('Попробуйте число меньше.');
-    } else if (useAnswer < number) {
-        alert('Попробуйте число больше.');
-    } else {
-        alert('Поздравляем! Вы угадали число! Количество попыток: ' + attempts);
+//     if (useAnswer > number) {
+//         alert('Попробуйте число меньше.');
+//     } else if (useAnswer < number) {
+//         alert('Попробуйте число больше.');
+//     } else {
+//         alert('Поздравляем! Вы угадали число! Количество попыток: ' + attempts);
 
-        if (!confirm('Хотите сыграть еще?')) return alert('Game Over!');
+//         if (!confirm('Хотите сыграть еще?')) return alert('Game Over!');
 
-        resetGame();
-    }
+//         resetGame();
+//     }
 
-    tryGuessNumber();
-}
+//     tryGuessNumber();
+// }
 
-resetGame();
-tryGuessNumber();
+// resetGame();
+// tryGuessNumber();
