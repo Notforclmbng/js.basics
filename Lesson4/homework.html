@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        function numberToObject(number) {
+            if (!Number.isInteger(number) || number < 0 || number > 999) {
+                console.log('Число не соответствует условиям');
+                return {};
+            }
+
+            return {
+                units: number % 10,
+                tens: Math.floor(number / 10) % 10,
+                hundreds: Math.floor(number / 100),
+            }
+        }
+
+        console.log(numberToObject(472));
+    </script>
+
+
+    <script>
+        // ['наименование', 'цена за шт.', 'кол-во шт']
+
+        // ['pen', 23, 60],
+        // ['notebook', 20, 9],
+        // ['pencil', 10, 5],
+
+        const cart = {
+            goods: [
+                {
+                    name: 'pen',
+                    price: 23,
+                    quantity: 60,
+                },
+                {
+                    name: 'notebook',
+                    price: 20,
+                    quantity: 9,
+                },
+                {
+                    name: 'pencil',
+                    price: 10,
+                    quantity: 5,
+                }
+            ],
+
+            countCartPrice() {
+                return this.goods.reduce((totalPrice, cartItem) => totalPrice + cartItem.price * cartItem.quantity, 0);
+            },
+        };
+
+        console.log(cart.countCartPrice());
+
+
+        // function countCartPrice(cart) {
+        //     let totalPrice = 0;
+        //     console.log(countCartPrice);
+        //     for (let i = 0; i < cart.lenght; i++) {
+        //         totalPrice += cart[i][1] * cart[i][2];
+        //     }
+        //     return totalPrice;
+        // }
+    </script>
+</body>
+
+</html>
