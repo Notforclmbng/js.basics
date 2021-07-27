@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="id-test">
+    <h1 style="color: red;" class="one two">Тестовая страница</h1>
+    <div class="test-class">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quis, soluta! Alias, aliquam asperiores consectetur culpa error et facere fugiat ipsum molestias nemo, perspiciatis quae quam sit sunt suscipit voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem distinctio et fugit non numquam optio quod, reiciendis vel vero. Doloremque illo ipsa nihil nostrum pariatur sint temporibus. Commodi, provident?</p>
+    </div>
+    <div class="test-class">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quis, soluta! Alias, aliquam asperiores consectetur culpa error et facere fugiat ipsum molestias nemo, perspiciatis quae quam sit sunt suscipit voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem distinctio et fugit non numquam optio quod, reiciendis vel vero. Doloremque illo ipsa nihil nostrum pariatur sint temporibus. Commodi, provident?</p>
+    </div>
+</div>
+
+<div id="demo">
+</div>
+<!--<div onclick="hello();bye();">Click Me!</div>-->
+<!--<div onclick="compose()">Click Me!</div>-->
+<div class="my-btn">Click Me!</div>
+<script>
+    "use strict";
+    // function hello() {
+    //     alert('Hello!');
+    // }
+    //
+    // function bye() {
+    //     alert('Bye!');
+    // }
+    //
+    // function compose() {
+    //     hello();
+    //     bye();
+    // }
+    //
+    // const btn = document.querySelector('.my-btn');
+    // // // btn.onclick = compose;
+    // // btn.onclick = hello;
+    // // btn.onclick = bye;
+    // // btn.onclick = null;
+    //
+    // btn.addEventListener('click', hello);
+    // btn.addEventListener('click', bye);
+    // btn.addEventListener('click', function () {
+    //     console.log('O_o')
+    // });
+    //
+    // btn.removeEventListener('click', hello);
+    // btn.removeEventListener('click', bye);
+    // btn.removeEventListener('click', function () {
+    //     console.log('O_o')
+    // });
+
+    // События документа
+    // window.addEventListener('load', function () {
+    //     //...
+    // });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     //...
+    // });
+    // window.addEventListener('beforeunload', function () {
+    //     //...
+    // })
+
+    // console.dir(document);
+    // console.log(document.getElementById('id-test'));
+    // console.log(document.getElementsByClassName('test-class'));
+    // console.log(Array.from(document.getElementsByClassName('test-class')));
+    // console.log(document.getElementsByTagName('p'));
+
+    // console.log(document.querySelector('.test-class:last-child'));
+    // console.log(document.querySelectorAll('.test-class')); // #id, elem, .class
+
+    // const pTags = document.querySelectorAll('p');
+    // for (let i = 0; i < pTags.length; i++) { // for of
+    //     console.log(pTags[i]);
+    // }
+
+    // const h1Tag = document.querySelector('h1');
+    // console.log(h1Tag.textContent);
+    // console.log(h1Tag.innerText);
+    // console.log(h1Tag.innerHTML);
+
+    // h1Tag.textContent += '<i>!</i>';
+    // h1Tag.innerText += '<i>!</i>';
+    // h1Tag.innerHTML += '<i>!</i>';
+
+    // const demo = document.querySelector('#demo');
+    //
+    // // BAD
+    // // for (let i = 0; i < 10; i++) {
+    // //     demo.innerHTML += '<div>Element ' + i + '</div>';
+    // // }
+    //
+    // // OK
+    // let totalHTML = '';
+    // for (let i = 0; i < 10; i++) {
+    //     totalHTML += '<div>Element ' + i + '</div>';
+    // }
+    // demo.innerHTML = totalHTML;
+    // const h1Tag = document.querySelector('h1');
+    // h1Tag.style.backgroundColor = 'yellow';
+    // // console.log(h1Tag.style);
+    // console.log(getComputedStyle(h1Tag));
+    // h1Tag.className = '';
+    // console.log(h1Tag.className);
+    // h1Tag.classList.add('three');
+    // h1Tag.classList.remove('two');
+    // h1Tag.classList.toggle('two');
+    // h1Tag.classList.toggle('two');
+    // console.log(h1Tag.classList.contains('one'));
+    // console.log(h1Tag.classList);
+
+    // const myDiv = document.createElement('div');
+    // const i = document.createElement('i');
+    // i.textContent = 'Hello!';
+    // myDiv.appendChild(i);
+    // document.body.appendChild(myDiv);
+
+    // document.body.insertAdjacentHTML('beforebegin', '<div><i style="color: red" class="my">Hello!</i></div>');
+    // document.body.insertAdjacentHTML('afterbegin', '<div><i>Hello!</i></div>');
+    // document.body.insertAdjacentHTML('beforeend', '<div><i>Hello!</i></div>');
+    // document.body.insertAdjacentHTML('afterend', '<div><i>Hello!</i></div>');
+
+    // const h1Tag = document.querySelector('h1');
+    // const h1Tag = document.querySelector('h1').cloneNode(true);
+    // const parentElement = document.getElementById('id-test');
+    // const refElem = document.querySelector('.test-class:last-child');
+    //
+    // parentElement.insertBefore(h1Tag, refElem);
+
+    // const h1Tag = document.querySelector('h1');
+    // h1Tag.remove();
+    // h1Tag.parentElement.removeChild(h1Tag);
+</script>
+</body>
+</html>
